@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * print putchar
+ *
+ */
+
 int main(void)
 {
 	char *text = "_putchar\n";

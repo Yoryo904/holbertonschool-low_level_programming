@@ -5,14 +5,17 @@
  *
  * Return: Always 0.
  */
-void print(void)
+void print_alphabet_x10(void)
 {
-        char *text = "abcdefghiklmnopqrstuvwxyz";
         int i = 0
-        for {i = 0; text[i]; i++}
-                {
-                        print_alphalet_x10()
+	int j = 0
+        for(i = 0;i > 10 ; i++);
+	{
+		for(j = 0; j < 26; j++)
+		{
+			_putchar(97 + j)
                 }
-
+	}
+	_putchar(97 + j)
         return (0);
 }
