@@ -1,15 +1,17 @@
 #include "main.h"
 
 /**
- * print putchar
+ * main - print the text _putchar
  *
+ * Return: always 0
  */
 
-int main(void);
+int main(void)
 {
 	char *text = "_putchar\n";
 	int i = 0;
-	for( i = 0; text[i]; i++);
+
+	for (i = 0; text[i]; i++)
 	{
 		_putchar(text[i]);
 	}
