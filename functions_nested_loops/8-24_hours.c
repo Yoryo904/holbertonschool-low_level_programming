@@ -11,7 +11,7 @@ void jack_bauer(void)
 {
 	int hr, h, min, m;
 
-	for (h = 0; h <= 2; hr++)
+	for (h = 0; h <= 2; h++)
 	{
 		for (hr = 0; hr <= 9; hr++)
 		{
@@ -19,14 +19,14 @@ void jack_bauer(void)
 			{
 				for (m = 0; m <= 5; m++)
 				{
-					for (min = 0; min <= 9; min++)
+					for (min = 0; min <= 9; min++) 
 					{
 					_putchar(h + '0');
 					_putchar(hr + '0');
 					_putchar(58);
 					_putchar(m + '0');
 					_putchar(min + '0');
-					_putchar('\n');
+					_putchar('\n'); 
 					}
 				}
 			}
