@@ -3,8 +3,8 @@
 /**
  * add - to do an addition
  * between 2 numbers.
- * @n: first number.
- * @m: second number.
+ * @a: first number.
+ * @b: second number.
  *
  * Return: Always the result
  */
