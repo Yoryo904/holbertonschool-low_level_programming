@@ -9,8 +9,8 @@
 int main(void)
 {
     int n;
-   
-     add(89, 9);
+    
+    n = add(89, 9);
     printf("%d\n", n);
     return (0);
 }
