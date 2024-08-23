@@ -4,7 +4,7 @@
   * main - Prints the numbers since 0 to 9
   * now with a variable type integer.
   *
-  * Return: Always 
+  * Return: Always
   */
 int main(void)
 {
