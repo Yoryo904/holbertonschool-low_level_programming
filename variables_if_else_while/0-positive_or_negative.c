@@ -1,9 +1,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+
+/**
+ * main - prints if the number is
+ * negative, positive or 0
+ *
+ * Return: Always 0
+ */ 
 int main(void)
 {
 	int n;
@@ -20,7 +25,7 @@ int main(void)
 		printf("%d is 0\n", n);
 	}
 		
-	if (n < 0)
+	else
 	{
 		printf("%d is negative\n", n);
 	}
