@@ -5,7 +5,7 @@
  * number of *n
  * @*n: number to change
  *
- * Returns: void 
+ * Returns: void
  */
 
 void reset_to_98(int *n)
