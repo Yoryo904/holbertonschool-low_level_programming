@@ -5,7 +5,7 @@
  * the desire string
  * @s: the string to be count
  *
- * Returns: the length of the
+ * Returns: returns i the length of the
  * string
  */
 
