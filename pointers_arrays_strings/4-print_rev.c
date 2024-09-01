@@ -11,29 +11,6 @@
  * Returns: returns void
  */
 
-/*void print_rev(char *s)
-{
-	int i = 0;
-
-	_strlen(s);
-	
-	for (i -= 1; i <= 0; i--)
-	{
-		_putchar(s[i]);
-	}
-	
-	_putchar('\n');
-}
-
-int _strlen(char *s)
-{
-        int i = 0;
-
-        while (s[i] != '\0')
-                i++;
-
-        return (i);
-}*/
 
 void print_rev(char *s)
 {
