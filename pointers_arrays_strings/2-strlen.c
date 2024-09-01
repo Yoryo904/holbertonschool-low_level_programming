@@ -5,7 +5,7 @@
  * the desire string
  * @s: the string to be count
  *
- * Returns: the string length
+ * Return: returns the string length
  */
 
 int _strlen(char *s)
