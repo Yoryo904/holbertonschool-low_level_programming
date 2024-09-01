@@ -3,7 +3,7 @@
 /**
  * reset_to_98 - modifies and set the
  * number of *n
- * @*n: number to change
+ * @n: number to change
  *
  * Returns: void
  */
