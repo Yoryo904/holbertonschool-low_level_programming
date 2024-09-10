@@ -14,7 +14,7 @@ int _strlen(char *s)
  * @s - stringo to be count
  * *_strcat - concatenates dest and src in 1 string
  * @*dest - first string to be concatenate
- * @*src - second string to be concatenate 
+ * @*src - second string to be concatenate
  * Return: returns the concatenated string
  */
 char *_strcat(char *dest, char *src)
