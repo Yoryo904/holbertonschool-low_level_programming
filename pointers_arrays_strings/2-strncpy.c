@@ -48,11 +48,7 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 
 
-	if (src_len == 0)
-	{
-		dest[i] = '\0';
-		i++;
-	}
+	
 	if (n > src_len)
 	{
 	
@@ -61,6 +57,12 @@ char *_strncpy(char *dest, char *src, int n)
 			dest[i] = '\0';
 			i++;	
 		}
+	}
+	
+	if (n < src_len)
+	{
+		dest[i] = '\0';
+		i++;
 	}
 	return (dest);
 }
