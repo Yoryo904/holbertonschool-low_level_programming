@@ -23,7 +23,7 @@ int _strlen(char *s)
  *
  * Return: returns the concatenated string
  */
-char *_strncat(char *dest, char *src, int n);
+char *_strncat(char *dest, char *src, int n)
 {
 	int dest_len = 0;
 	int src_len = 0;
