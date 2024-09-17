@@ -1,35 +1,25 @@
 #include "main.h"
 /**
+ * _strspn - counts the length of the string according to the accept string
+ * @s: string to be count and checked
+ * @accept: string which will be checked with *s
  *
- */
-
-int _strlen(char *s)
-{
-	int i = 0;
-
-	while (s[i])
-		i++;
-	return (i);
-}
-/**
- *
- *
+ * Returm: the length of the string according to the accept string
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
 	int i = 0;
 	int j = 0;
-	int str_len = 0;
-
-	for (i = 0; s[i]; i++)
+	unsigned int s_length = 0;
+	for (i = 0; accept[i]; i++)
 	{
-		for (i= 0; accept[j]; i++)
-			if (s[i] == accept[j])
-			{
-				str_len = _strlen(s);
-				break;
-			}
+		for (j = 0; s[j] != ' '; j++)
+		{
+			if (accept[i] == s[j])
+				s_length++;
+				
+		}
 	}
-	return (str_len);
+	return (s_length);
 }

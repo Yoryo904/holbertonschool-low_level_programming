@@ -25,7 +25,6 @@ int _strlen(char *s)
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int dest_len = 0;
 	int src_len = 0;
 	int i = 0;
 
@@ -34,7 +33,6 @@ char *_strncpy(char *dest, char *src, int n)
 	if (src == NULL)
 		return (dest);
 
-	dest_len = _strlen(dest);
 	src_len = _strlen(src);
 
 
@@ -47,14 +45,9 @@ char *_strncpy(char *dest, char *src, int n)
 		i++;
 	}
 
-	if (n < src_len)
-	{
-		dest[i] = '\0';
-	}	
-
 	if (n > src_len)
 	{
-		while (i < dest_len)
+		while (i < n)
 		{
 			dest[i] = '\0';
 			i++;	
