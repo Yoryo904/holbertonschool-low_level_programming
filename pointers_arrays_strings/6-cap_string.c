@@ -1,14 +1,19 @@
 #include "main.h"
 
 /**
+ * cap_string - capitalizes all words of a string according
+ * to the separators assigned
+ * @str: the string to be capitalized
  *
+ * Return: the string capitalized
  */
 
 char *cap_string(char *str)
 {
 	int i = 0;
 	int j = 0;
-	char separators[] = { ' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};  
+	char separators[] = { ' ', '\t', '\n', ',', ';', '.', '!', '?',
+	'"', '(', ')', '{', '}'};
 
 	for (i = 0; str[i]; i++)
 	{
@@ -28,5 +33,5 @@ char *cap_string(char *str)
 		}
 	}
 	return (str);
-}	
+}
 

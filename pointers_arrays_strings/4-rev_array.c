@@ -2,7 +2,12 @@
 
 
 /**
+ * reverse_array - reverse the content of an array of integers according
+ * to the desire number of bytes
+ * @a: the array to be reverse
+ * @n: the number of bytes to reverse
  *
+ * Returns: returns void
  */
 
 void reverse_array(int *a, int n)

@@ -15,12 +15,13 @@ int _strlen(char *s)
 	return (i);
 }
 /**
- * _strncpy - rewrites the number of bytes 
+ * _strncpy - rewrites the number of bytes
  * (n) src for the dest string
- * @dest - destination string
- * @src - source string
- * 
- * Return: destination string (dest)  
+ * @dest: the destination string
+ * @src: the source string
+ * @n: the number of bytes to copy
+ *
+ * Return: destination string (dest)
  */
 
 char *_strncpy(char *dest, char *src, int n)
@@ -50,10 +51,8 @@ char *_strncpy(char *dest, char *src, int n)
 		while (i < n)
 		{
 			dest[i] = '\0';
-			i++;	
+			i++;
 		}
 	}
-		
-	
 	return (dest);
 }
