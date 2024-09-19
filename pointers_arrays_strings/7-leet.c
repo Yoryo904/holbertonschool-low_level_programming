@@ -7,13 +7,20 @@
 char *leet(char *str)
 {
 	int i = 0;
+	int j = 0;
 	char aeotl[] = {'a', 'A','e', 'E', 'o', 'O', 't', 'T', 'l', 'L'}; 
-	char numbers[] = {'4', '3', '0', '7', '1'};
+	char numbers[] = {52, 52, 51, 51, 48, 48, 55, 55, 49, 49};
  
 	for (i = 0; str[i]; i++)
-
-		if (str[i] == (aeotl[0] || aeotl[1]) && (aeotl[2] || aeotl[3]) && (aeotl[4] || aeotl[5]) && (aeotl[6] || aeotl[7]) && (aeotl[8] || aeotl[9]))
-			str[i] = numbers[0] && str[i] = numbers[1] && str[i] = numbers[2] && str[i] = numbers[3] && str[i] = numbers[4];
-			continue
+	{
+		for (j = 0; aeotl[j]; j++)
+		{
+			if (str[i] == aeotl[j])
+			{
+				str[i] = numbers[j];
+				break;
+			}
+		}
+	}
 	return (str);
 }
