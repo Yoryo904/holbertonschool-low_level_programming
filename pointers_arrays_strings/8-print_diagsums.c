@@ -11,7 +11,6 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < size; i++)
 	{
-		printf("%d\n", a[i]);
 		sum_diagonal_asc += a[(size + 1) * i];
 		sum_diagonal_desc += a[(size - 1) * (i + 1)];	
 
