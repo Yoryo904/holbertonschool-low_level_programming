@@ -21,6 +21,9 @@ char *_strstr(char *haystack, char *needle)
 	int i = 0;
 	int j = 0;
 	int needle_len = _strlen(needle);
+	
+	if (needle == NULL || *needle == '\0')
+		return (haystack);
 
 	for (i = 0; haystack[i]; i++)
 	{
