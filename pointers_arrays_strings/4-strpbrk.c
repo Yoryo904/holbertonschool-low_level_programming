@@ -8,9 +8,9 @@ char *_strpbrk(char *s, char *accept)
 {
 	int i = 0;
 	int j = 0;
-
+	
 	if (accept == NULL || *accept == '\0')
-		return (s);
+		return (NULL);
 	if (s == NULL || *s == '\0')
 		return (NULL);
 
