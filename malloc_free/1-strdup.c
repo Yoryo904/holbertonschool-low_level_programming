@@ -43,7 +43,7 @@ char *_strdup(char *str)
 	{
 		arrayString[i] = str[i];
 	}
-	arrayString[str_len] = '\0'
+	arrayString[str_len] = '\0';
 
 	return (arrayString);
 }
