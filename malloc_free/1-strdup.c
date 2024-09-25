@@ -31,14 +31,16 @@ char *_strdup(char *str)
 	char *arrayString = 0;
 	int str_len = _strlen(str);
 
-	arrayString = (char *) malloc(sizeof(str) * str_len - 1);
+	arrayString = (char *) malloc(sizeof(str) * str_len);
 
 	if (str == NULL)
 		return (NULL);
+	if (str == '\0')
+		return ('\0');
 	if (arrayString == NULL)
 		return (NULL);
 
-	for (i = 0; i <= str_len - 1; i++)
+	for (i = 0; i <= str_len; i++)
 	{
 		arrayString[i] = str[i];
 	}
