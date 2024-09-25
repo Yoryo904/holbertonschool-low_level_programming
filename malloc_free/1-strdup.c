@@ -31,12 +31,11 @@ char *_strdup(char *str)
 	char *arrayString = 0;
 	int str_len = _strlen(str);
 
-	arrayString = (char *) malloc(sizeof(str) * str_len);
-
 	if (str == NULL)
 		return (NULL);
-	if (*str == "")
-		return ("");
+
+	arrayString = (char *) malloc(sizeof(str) * str_len);
+
 	if (arrayString == NULL)
 		return (NULL);
 
