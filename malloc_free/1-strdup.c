@@ -34,14 +34,16 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	arrayString = (char *) malloc(sizeof(str) * str_len);
+	arrayString = (char *) malloc(sizeof(char) * (str_len + 1));
 
 	if (arrayString == NULL)
 		return (NULL);
 
-	for (i = 0; i <= str_len; i++)
+	for (i = 0; i < str_len; i++)
 	{
 		arrayString[i] = str[i];
 	}
+	arrayString[str_len] = '\0'
+
 	return (arrayString);
 }
