@@ -29,11 +29,11 @@ char *_strdup(char *str)
 {
 	int i = 0;
 	char *arrayString = 0;
-	int str_len = _strlen(str);
+	int str_len = 0;
 
 	if (str == NULL)
 		return (NULL);
-
+	str_len = _strlen(str);
 	arrayString = (char *) malloc(sizeof(char) * (str_len + 1));
 
 	if (arrayString == NULL)
