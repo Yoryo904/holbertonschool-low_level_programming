@@ -35,7 +35,7 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	if (*str == '\0')
+	if (*str == "")
 		return ("");
 	if (arrayString == NULL)
 		return (NULL);
