@@ -2,6 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * _strlen - counts the length of a string
+ * @c: the string to be count
+ *
+ * Return: the length of the string
+ */
+
 int _strlen(char *c)
 {
 	int i = 0;
@@ -12,7 +19,13 @@ int _strlen(char *c)
 }
 
 /**
+ * str_concat - concatenates two strings and allocates them in a new adress
+ * in memory
+ * @s1: the first string to bw concatenate
+ * @s2: the second string to be concatenate
  *
+ * Return: the first and the second string concatenated in one string and new
+ * adress in memory
  */
 
 char *str_concat(char *s1, char *s2)
@@ -34,7 +47,7 @@ char *str_concat(char *s1, char *s2)
 
 	for (i = 0; i < s1_len; i++)
 	{
-		arrayConcat[i] = s1[i];	
+		arrayConcat[i] = s1[i];
 	}
 	for (i = 0; i < s2_len; i++)
 	{
