@@ -53,6 +53,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		arrayConcat[i + s1_len] = s2[i];
 	}
+	arrayConcat[s1_len + s2_len] = '\0';
 	return (arrayConcat);
 
 }
