@@ -3,7 +3,11 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - 
+ * alloc_grid - allocates a 2 imensional array in memory
+ * @width: is how wide is the array
+ * @height: is how long is the array
+ *
+ * Return: the array with the especifications you put
  */
 
 int **alloc_grid(int width, int height)
@@ -12,7 +16,7 @@ int **alloc_grid(int width, int height)
 	int i = 0;
 	int j = 0;
 
-	if (width <= 0 || height <= 0)
+	if (width <= 0 || heigh	t <= 0)
 		return (NULL);
 
 	arrayIntegers = (int **) malloc(sizeof(int *) * height);
@@ -35,6 +39,4 @@ int **alloc_grid(int width, int height)
 		}
 	}
 	return (arrayIntegers);
-
-				
 }
