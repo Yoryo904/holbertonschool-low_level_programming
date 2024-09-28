@@ -1,7 +1,11 @@
 #include "main.h"
 
 /**
+ * array_range - create and allocate an array of integers
+ * @min: the minimum integer
+ * @max: the maximum integer (the limit)
  *
+ * Return: an array of integers since min to max
  */
 
 int *array_range(int min, int max)
@@ -13,7 +17,7 @@ int *array_range(int min, int max)
 		return (NULL);
 
 	arrayRange = (int *) malloc(sizeof(int) * max);
-	
+
 	if (arrayRange == NULL)
 		return (NULL);
 

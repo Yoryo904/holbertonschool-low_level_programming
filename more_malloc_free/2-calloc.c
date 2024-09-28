@@ -1,7 +1,11 @@
 #include "main.h"
 
 /**
+ * _calloc - allocate memory for an array
+ * @nmemb: amount of memory to allocate
+ * @size: the type of variable is allocate
  *
+ * Return: an array with the desire amount and size allocated
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)

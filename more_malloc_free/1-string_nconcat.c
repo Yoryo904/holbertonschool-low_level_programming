@@ -1,7 +1,10 @@
 #include "main.h"
 
 /**
+ * _strlen - counts the length of a string
+ * @s: the string to be count
  *
+ * Return: the length of the string
  */
 
 int _strlen(char *s)
@@ -14,7 +17,11 @@ int _strlen(char *s)
 }
 
 /**
+ * string_nconcat - allocates and concatenates 2 strings
+ * @s1: first string to be concatenate
+ * @s2: second string to be concatenate
  *
+ * Return: the string concatenated and allocated in memory
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -23,6 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int s1_len = 0;
 	unsigned int s2_len = 0;
 	unsigned int i = 0;
+
 	if (s2 != NULL)
 		s2_len = _strlen(s2);
 	if (s1 != NULL)
