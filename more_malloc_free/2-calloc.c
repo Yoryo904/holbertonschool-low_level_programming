@@ -21,8 +21,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (arrayCalloc == NULL)
 		return (NULL);
 
-	for (i = 0; i < nmemb * size; i++)
-		 arrayCalloc[i] = 0;
+	for (i = 0; i < (nmemb * size); i++)
+		arrayCalloc[i] = 0;
 
 	return (arrayCalloc);
 }
