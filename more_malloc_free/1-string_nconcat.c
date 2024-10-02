@@ -20,6 +20,7 @@ int _strlen(char *s)
  * string_nconcat - allocates and concatenates 2 strings
  * @s1: first string to be concatenate
  * @s2: second string to be concatenate
+ * @n: the limit of bytes to concatenate
  *
  * Return: the string concatenated and allocated in memory
  */
@@ -39,7 +40,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2_len = n;
 
 	arrayChar = (char *) malloc(sizeof(char) * (s1_len + s2_len + 1));
-	
+
 	if (arrayChar == NULL)
 		return (NULL);
 
