@@ -1,7 +1,10 @@
 #include "dog.h"
 
 /**
+ * _strlen - counts the length of a string
+ * @s: the string
  *
+ * Returns: the length of the desire string
  */
 
 int _strlen(char *s)
@@ -14,7 +17,12 @@ int _strlen(char *s)
 }
 
 /**
+ * new_dog - creates a new dog type struct dog
+ * @name: the dog's name
+ * @age: the dog's age
+ * @owner: the owner's name
  *
+ * Return: name, age and owner
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -31,9 +39,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	if (owner == NULL)
 		return (NULL);
-
-	
-	/* arrayDog[3] = {name, age, owner}; */
 
 	name_len = _strlen(name);
 	owner_len = _strlen(owner);
@@ -64,8 +69,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		arrayStore[name_len + i] = name[i];
 	}
-	/* arrayStore[name_len + owner_len + 1] = '\0'; */
-
 	free(arrayStore);
-	return(arrayDog);
+	return (arrayDog);
 }

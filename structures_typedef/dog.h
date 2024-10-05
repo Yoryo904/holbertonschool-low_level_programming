@@ -7,7 +7,17 @@
 
 /* structure */
 
-typedef struct dog 
+/**
+ * struct dog - recives name, age and owner
+ * @name: the dog's name
+ * @age: the dog's age
+ * @owner: the owner's name
+ *
+ * Description: recives the dog's name as a string, the dog's age as a float
+ * and the owner's name as a string
+ */
+
+typedef struct dog
 {
 	char *name;
 	float age;
