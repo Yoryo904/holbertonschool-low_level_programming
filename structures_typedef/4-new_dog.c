@@ -17,6 +17,32 @@ int _strlen(char *s)
 }
 
 /**
+ *
+ */
+
+char *_strdup(char *str)
+{
+        int i = 0;
+        char *arrayString = 0;
+        int str_len = 0;
+
+        if (str == NULL)
+                return (NULL);
+        str_len = _strlen(str);
+        arrayString = (char *) malloc(sizeof(char) * (str_len + 1));
+
+        if (arrayString == NULL)
+                return (NULL);
+
+        for (i = 0; i < str_len; i++)
+        {
+                arrayString[i] = str[i];
+        }
+        arrayString[str_len] = '\0';
+
+        return (arrayString);
+}
+/**
  * new_dog - creates a new dog type struct dog
  * @name: the dog's name
  * @age: the dog's age
@@ -27,11 +53,9 @@ int _strlen(char *s)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *arrayDog = NULL;
-	char *arrayStore = NULL;
+	dog_t *newDog = NULL;
 	int name_len = 0;
 	int owner_len = 0;
-	int i = 0;
 
 	if (name == NULL)
 		return (NULL);
@@ -48,27 +72,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (owner_len == 0)
 		return (NULL);
 
-	arrayDog = (dog_t *) malloc(sizeof(dog_t) * 3);
-	arrayStore = (char *) malloc(sizeof(char) * ((name_len + owner_len) + 1));
+	newDog = (dog_t *) malloc(sizeof(dog_t));
 
-	arrayDog->name = name;
-	arrayDog->age = age;
-	arrayDog->owner = owner;
-
-	if (arrayStore == NULL)
-		return (NULL);
-	if (arrayDog == NULL)
+	if (newDog == NULL)
 		return (NULL);
 
-	for (i = 0; i < name_len; i++)
-	{
-		arrayStore[i] = name[i];
-	}
+	newDog->name = _strdup(name);
+	newDog->age = age;
+	newDog->owner = _strdup(owner);
 
-	for (i = 0; i < owner_len; i++)
-	{
-		arrayStore[name_len + i] = name[i];
-	}
-	free(arrayStore);
-	return (arrayDog);
+	return (newDog);
 }
