@@ -4,7 +4,7 @@
  * _strlen - counts the length of a string
  * @s: the string
  *
- * Returns: the length of the desire string
+ * Return: the length of the desire string
  */
 
 int _strlen(char *s)
@@ -17,34 +17,37 @@ int _strlen(char *s)
 }
 
 /**
+ * _strdup - allocates memory and duplicates a string
+ * @str: the string
  *
+ * Return: the allocate and duplicate string 
  */
 
 char *_strdup(char *str)
 {
-        int i = 0;
-        char *arrayString = 0;
-        int str_len = 0;
+	int i = 0;
+	char *arrayString = 0;
+	int str_len = 0;
 
-        if (str == NULL)
-                return (NULL);
-        str_len = _strlen(str);
-        arrayString = (char *) malloc(sizeof(char) * (str_len + 1));
+	if (str == NULL)
+		return (NULL);
+	str_len = _strlen(str);
+	arrayString = (char *) malloc(sizeof(char) * (str_len + 1));
 
-        if (arrayString == NULL)
-                return (NULL);
+	if (arrayString == NULL)
+		return (NULL);
 
-        for (i = 0; i < str_len; i++)
-        {
-                arrayString[i] = str[i];
-        }
-        arrayString[str_len] = '\0';
+	for (i = 0; i < str_len; i++)
+	{
+		arrayString[i] = str[i];
+	}
+	arrayString[str_len] = '\0';
 
-        return (arrayString);
+	return (arrayString);
 }
 /**
  * new_dog - creates a new dog type struct dog
- * @name: the dog's name
+ * @name: the doZZg's name
  * @age: the dog's age
  * @owner: the owner's name
  *
@@ -78,22 +81,18 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 	newDog->name = _strdup(name);
-
 	if (newDog->name == NULL)
 	{
 		free(newDog);
 		return (NULL);
 	}
-
 	newDog->age = age;
 	newDog->owner = _strdup(owner);
-
 	if (newDog->owner == NULL)
 	{
 		free(newDog->name);
 		free(newDog);
 		return (NULL);
 	}
-
 	return (newDog);
 }
