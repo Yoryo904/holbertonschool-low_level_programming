@@ -3,7 +3,7 @@
 /**
  * free_dog - free a pointer type dog_t
  * @d: the pointer type dog_t
- * 
+ *
  * Return: void
  */
 
