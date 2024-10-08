@@ -20,7 +20,7 @@ int _strlen(char *s)
  * _strdup - allocates memory and duplicates a string
  * @str: the string
  *
- * Return: the allocate and duplicate string 
+ * Return: the allocate and duplicate string
  */
 
 char *_strdup(char *str)
