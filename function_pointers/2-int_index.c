@@ -1,8 +1,12 @@
 #include "function_pointers.h"
 
 /**
+ * int_index - search the desire integer and returns the index
+ * @array: the integer's array to search
+ * @size: the array's size
+ * @cmp: the function to compare
  *
- *
+ * Return: the integer's index
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
@@ -21,5 +25,5 @@ int int_index(int *array, int size, int (*cmp)(int))
 		if (cmp(array[i]) != 0)
 			return (i);
 	}
-	return (-1);	
+	return (-1);
 }
