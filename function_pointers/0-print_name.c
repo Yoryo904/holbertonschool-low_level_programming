@@ -6,7 +6,7 @@
  * @name: the name to be print
  * @f: the function that will modify name
  *
- * Return: the printed name with the desire modifications
+ * Return: void
  */
 void print_name(char *name, void (*f)(char *))
 {
