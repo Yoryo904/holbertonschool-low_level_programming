@@ -1,7 +1,10 @@
 #include "3-calc.h"
 
 /**
+ * get_op_func - from a string calls another function
+ * @s: the string
  *
+ * Return: a pointer to a function
  */
 
 int (*get_op_func(char *s))(int, int)
@@ -16,7 +19,7 @@ int (*get_op_func(char *s))(int, int)
 	};
 
 	int i = 0;
-	
+
 	while (ops[i].op)
 	{
 		if (strcmp(s, ops[i].op) == 0)
@@ -24,4 +27,4 @@ int (*get_op_func(char *s))(int, int)
 		i++;
 	}
 	return (NULL);
-}	
+}
