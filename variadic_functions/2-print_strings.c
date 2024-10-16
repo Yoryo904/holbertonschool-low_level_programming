@@ -29,7 +29,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n - 1; i++)
 	{
 		currentString = va_arg(strings, char *);
-		printf("%s", currentString);
 		if (currentString == NULL)
 			currentString = "(nil)";
 		printf("%s%s", currentString, separator);
