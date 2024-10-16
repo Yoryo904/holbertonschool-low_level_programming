@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
 
-/** 
+/**
  * print_strings - print the desire amount of strings and the
  * user can choose the separator between the strings
  * @separator: the separator that will be between the strings
@@ -17,7 +17,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list strings;
 
 	va_start(strings, n);
-	
+
 	if (separator == NULL)
 		separator = "";
 
@@ -30,6 +30,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 	currentString = va_arg(strings, char *);
 	printf("%s\n", currentString);
-	
-	va_end(strings);		
+
+	va_end(strings);
 }
